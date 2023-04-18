@@ -61,7 +61,7 @@ public class WealthService implements IWealthService {
 				throw new InsufficientFundsException();
 			}
 		} else {
-			if (amount.compareTo(wealthMap.get(currency)) == 1) { // Trying to sell more than he has.
+			if (amount.compareTo(wealthMap.get(currency)) == 1) {       // Trying to sell more than he has.
 				throw new InsufficientFundsException(currency);
 			}
 		}
